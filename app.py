@@ -7,7 +7,7 @@ from langchain_community.callbacks.streamlit import StreamlitCallbackHandler
 
 from langchain_groq import ChatGroq
 
-#Arxiv and Wikipedia tools
+###Arxiv and Wikipedia tools
 api_arxiv=ArxivAPIWrapper(top_k_results=1,doc_content_chars_max=300)
 arxiv=ArxivQueryRun(api_wrapper=api_arxiv)
 
@@ -51,3 +51,4 @@ if api_key:
             response=search_agent.run(st.session_state.messages,callbacks=[st_cb])
             st.session_state.messages.append({'role':'assistant','content':response})
             st.write(response)
+
