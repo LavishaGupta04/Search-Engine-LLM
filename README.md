@@ -1,2 +1,9 @@
-# Search-Engine-LLM
-A friendly application where you can search anything from the web. The only demand being that you have to provide your groq api key.
+---
+license: apache-2.0
+title: Search Engine
+sdk: streamlit
+emoji: 🏃
+colorFrom: red
+colorTo: yellow
+short_description: Search Engine with LLM
+---
